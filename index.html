@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Ayapha ❤️</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+    }
+    header {
+      background: #222;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+    .heart {
+      width: 100px;
+      height: 90px;
+      position: relative;
+      margin: 40px auto;
+      animation: beat 1s infinite;
+    }
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      border-radius: 50%;
+      background: red;
+    }
+    .heart:before { left: -50px; }
+    .heart:after { top: -50px; }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      background: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    #letter {
+      margin-top: 30px;
+      white-space: pre-line;
+      font-size: 18px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/uzukhanye.jpg" alt="Uzukhanye">
+    <h2>Uzukhanye</h2>
+  </header>
+
+  <div class="heart"></div>
+  <h1>Will you be mine?</h1>
+
+  <div class="buttons">
+    <button onclick="showLetter()">Yes</button>
+    <button onclick="alert('No? 💔 But I’ll always love you.')">No</button>
+  </div>
+
+  <div id="letter">
+    My dearest Ayapha,
+
+    From the moment our paths crossed, my world has been brighter. 
+    You are not just my boyfriend, you are my safe place, my joy, 
+    and the rhythm my heart beats to. Every day with you feels like 
+    a new chapter in a love story I never want to end.
+
+    Your smile is my sunrise, your voice my favorite melody, and 
+    your presence my greatest gift. I admire your strength, your 
+    kindness, and the way you make me feel seen and loved in ways 
+    words can barely capture.
+
+    I want you to know that I appreciate you deeply — for the little 
+    things, the big things, and everything in between. You are my 
+    partner, my inspiration, and the love I will always cherish.
+
+    Forever yours,
+    Uzukhanye
+  </div>
+
+  <script>
+    function showLetter() {
+      document.getElementById("letter").style.display = "block";
+    }
+  </script>
+</body>
+</html>
